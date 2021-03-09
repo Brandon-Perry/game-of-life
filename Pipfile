@@ -5,10 +5,16 @@ name = "pypi"
 
 [packages]
 flask = "*"
-psycopg2-binary = "*"
 python-dotenv = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+alembic = "*"
+flask-cors = "*"
+pyjwt = "*"
+sqlalchemy = "*"
 
 [dev-packages]
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.9"
