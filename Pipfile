@@ -12,6 +12,7 @@ alembic = "*"
 flask-cors = "*"
 pyjwt = "*"
 sqlalchemy = "*"
+flask-login = "*"
 
 [dev-packages]
 psycopg2-binary = "*"
