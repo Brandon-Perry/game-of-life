@@ -11,12 +11,12 @@ class Pattern(db.Model):
     width = db.Column(db.Integer, nullable=False)
     pattern_state = db.Column(db.LargeBinary, nullable=False)
 
-
-    return {
-        'id':self.id,
-        'user_id':self.user_id,
-        'public':self.public,
-        'height':self.height,
-        'width':self.width,
-        'pattern_state':self.pattern_state
-    }
+    def to_dict(self):
+        return {
+            'id':self.id,
+            'user_id':self.user_id,
+            'public':self.public,
+            'height':self.height,
+            'width':self.width,
+            'pattern_state':self.pattern_state
+        }
